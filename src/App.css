@@ -1,38 +1,275 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+.container{
+  margin: 25px;
+}
+
+.topbar{
+    background-color: rgba(20,14,26,255);
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.topbarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.topbarTitle{
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.topbarTitle::first-letter{
+    color: rgba(59,86,74,255);
+}
+
+.topbarMenu{
+    display: flex;
+    list-style: none;
+}
+
+.topbarLinks{
+    margin:0px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.topbarLinks:hover{
+    color: rgba(59,86,74,255);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.info{
+  background-color: rgb(75,86,82);
+  height: 150px;
+  border: 4px solid black;
+  border-radius: 10px;
+
+}
+
+.infoWrapper{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.infoContainer{
+  padding: 40px 0px;
+  color: white;
+  font-size: 18px;
+}
+
+.infoQuantity{
+  margin-top: 10px;
   text-align: center;
+  font-weight: bold;
+} 
+
+.crypto{
+  height: 100vh;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(38,55,76,255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cryptoWrapper{
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  color: rgba(142,158,180,255);   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currencyContainer{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.imgContainer{
+  border: 1px solid gray;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 10px;
+}
+
+.img{
+  width: 32px;
+  height: 32px;
+}
+
+.symbol{
+  font-weight: 600;
+  margin:0px 5px;
+}
+
+.dataGrid{
+  margin: 20px 40px;
+}
+
+.btn{
+  border: none;
+  border-radius: 14px;
+  padding: 10px 30px;
+  background-color: rgba(27,182,193,255);
+  cursor: pointer;
+}
+
+.listItem{
+  height: 65px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.listTitle{
+  margin: 20px 0px;
+}
+
+.coinImg{
+  width: 40px;
+  height: 40px;
+}
+
+.listWrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin: 0px 20px;
+
+}
+
+.listCoin{
+  display: flex;
+  align-items: center;
+}
+
+span{
+  font-size: 14px;
+  font-weight: 500;
+  margin:0px 15px;
+}
+
+.btn{
+  border: none;
+  border-radius: 14px;
+  padding: 10px 30px;
+  background-color: rgba(27,182,193,255);
+  cursor: pointer;
+
+}
+
+.btn:hover{
+  transform: translateY(-5px)
+}
+
+.buy{
   display: flex;
   flex-direction: column;
+  height: 80vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.buyCoin{
+  margin-bottom: 10px;
+}
+
+.buyContainer{
+  width: 20%;   
+}
+
+.buyTitle{
+  font-size: 25px;
+  font-weight: 500;
   color: white;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(82,143,204,255);
 }
 
-.App-link {
-  color: #61dafb;
+form{
+  display: flex;
+  flex-direction: column;   
+  padding: 15px;
+  border: 1px solid rgba(82,143,204,255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form > input{
+  width: 100%;
+  height: 30px;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.amount{
+  border: 1px solid gray;
+  height: 35px;
+  margin:10px 0px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.buyButton{
+  background-color: transparent;
+  color: rgba(82,143,204,255);
+  border: 1px solid rgba(82,143,204,255);
+  padding:10px 40px;
+  cursor: pointer;
+} 
+
+.exchange{
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchangeTitle{
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: rgba(82,143,204,255);
+}
+
+.label{
+  margin-left: -120px;
+  height: 35px;
+  color: white;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.input{
+  width: 19%;
+  height: 35px;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 5px;
+
+}
+
+select{
+  width: 19%;
+  height: 40px;
+  font-size: 18px;
+  outline: none;  
+  padding-left: 5px;
+  
 }
