@@ -4,7 +4,7 @@ import {coins} from '../data'
 
 const Info = () => {
     const coinWallet = useSelector(state => state.crypto.coins)
- 
+    
     return (
         <div className='info'>
             <div className="infoWrapper">
@@ -19,7 +19,7 @@ const Info = () => {
 
                 <div className="infoContainer">
                     <h5 className="infoTitle">
-                    Total Number of Crypto Coins
+                    Total Number of Crypto Coins to buy
                     </h5>
                     <div className="infoQuantity">
                         {coins.length}

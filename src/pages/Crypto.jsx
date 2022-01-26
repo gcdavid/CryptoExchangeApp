@@ -3,6 +3,7 @@ import { DataGrid } from '@mui/x-data-grid'
 import BuyCrypto from '../components/BuyCrypto';
 
 const Crypto = () => {
+    const [open, setOpen] = useState(false)
     const [buy, setBuy ] = useState(false)
     const [cryptoCoin, setCryptoCoin] = useState({})
     const columns = [
@@ -35,6 +36,7 @@ const Crypto = () => {
               <button onClick={() => {
                 setBuy((prev) => !prev)
                 setCryptoCoin(params.row)
+                setOpen(true)
                 }} className='btn'>Buy</button>
               
             </>
@@ -70,7 +72,7 @@ const Crypto = () => {
           
         </div>
 
-        {buy && <BuyCrypto cryptoCoin={cryptoCoin}/>}
+        {buy && <BuyCrypto open={open} close={setOpen} cryptoCoin={cryptoCoin}/>}
         </div>
       )
     };

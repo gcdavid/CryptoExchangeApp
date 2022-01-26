@@ -16,7 +16,6 @@ const ExchangeCrypto = ({open, item,close }) => {
     const handleSelect = (id) => {
         const item = coins.filter((coin) => coin.id === +id)
         setExchangeItem(item[0])
-        console.log(item);
     }
 
     const handleClick = (e) => {
