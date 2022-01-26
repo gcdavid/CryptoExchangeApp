@@ -7,8 +7,7 @@ const CryptoList = () => {
     const [empty, isEmpty] = useState(true)
     return (
         <div className='list'>
-            <h3 className="listTitle">Crypto Coins</h3>
-            
+            <h3 className="listTitle">Crypto Coins</h3>         
             {coins.map((item, index) => (
                 <SingleCryptoList item={item} key={index}/>
             ))}

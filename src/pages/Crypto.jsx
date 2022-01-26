@@ -47,16 +47,16 @@ const Crypto = () => {
       ];
     
       const rows = [
-        { id: 1,img: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=018',symbol: 'BTC', title: 'Bitcoin', price: '$42208.4', change: '1.48%' },
-        { id: 2,img: 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=018',symbol: 'ETH', title: 'Ethereum', price: '$42208.4', change: '2.48%' },
-        { id: 3,img: 'https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=018',symbol: 'BNB', title: 'Binance Coin', price: '$42208.4', change: '1.48%' },
-        { id: 4,img: 'https://cryptologos.cc/logos/tether-usdt-logo.png?v=018',symbol: 'USDT', title: 'Tether', price: '$42208.4', change: '1.48%' },
-        { id: 5,img: 'https://cryptologos.cc/logos/uniswap-uni-logo.png?v=018',symbol: 'UNI', title: 'Uniswap', price: '$42208.4', change: '1.48%' },
-        { id: 6,img: 'https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png?v=018',symbol: 'CRO', title: 'Crypto.com', price: '$42208.4', change: '1.48%' },
-        { id: 7,img: 'https://cryptologos.cc/logos/shiba-inu-shib-logo.png?v=018',symbol: 'SHIB', title: 'Shiba Inu', price: '$42208.4', change: '1.48%' },
-        { id: 8,img: 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=018',symbol: 'AVAX', title: 'Avalanche', price: '$42208.4', change: '1.48%' },
-        { id: 9,img: 'https://cryptologos.cc/logos/cardano-ada-logo.png?v=018',symbol: 'ADA', title: 'Cardano', price: '$42208.4', change: '1.48%' },
-        { id: 10,img: 'https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=018',symbol: 'DOGE', title: 'Dogecoin', price: '$42208.4', change: '1.48%' },
+        { id: 1,img: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=018',symbol: 'BTC', title: 'Bitcoin', price: '10' },
+        { id: 2,img: 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=018',symbol: 'ETH', title: 'Ethereum', price: '10'},
+        { id: 3,img: 'https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=018',symbol: 'BNB', title: 'Binance Coin', price: '10'  },
+        { id: 4,img: 'https://cryptologos.cc/logos/tether-usdt-logo.png?v=018',symbol: 'USDT', title: 'Tether', price: '10'  },
+        { id: 5,img: 'https://cryptologos.cc/logos/uniswap-uni-logo.png?v=018',symbol: 'UNI', title: 'Uniswap', price: '10' },
+        { id: 6,img: 'https://cryptologos.cc/logos/crypto-com-coin-cro-logo.png?v=018',symbol: 'CRO', title: 'Crypto.com', price: '10'  },
+        { id: 7,img: 'https://cryptologos.cc/logos/shiba-inu-shib-logo.png?v=018',symbol: 'SHIB', title: 'Shiba Inu', price: '10'  },
+        { id: 8,img: 'https://cryptologos.cc/logos/avalanche-avax-logo.png?v=018',symbol: 'AVAX', title: 'Avalanche', price: '10'  },
+        { id: 9,img: 'https://cryptologos.cc/logos/cardano-ada-logo.png?v=018',symbol: 'ADA', title: 'Cardano', price: '10',  },
+        { id: 10,img: 'https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=018',symbol: 'DOGE', title: 'Dogecoin', price: '10' },
       ];
     
       return (
