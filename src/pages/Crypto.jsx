@@ -14,7 +14,7 @@ const Crypto = () => {
             </div>
           )
         }},
-        { field: 'currency', headerName: 'Currency', width: 500, renderCell: (params) => {
+        { field: 'currency', headerName: 'Currency', width: 600, renderCell: (params) => {
           return (
             <div className="currencyContainer">
               <div className="imgContainer">
@@ -28,8 +28,8 @@ const Crypto = () => {
             </div>
           )
         }},
-        { field: 'price', headerName: 'Price', width: 300 },
-        { field: 'change', headerName: '24h Change', width: 200 },
+        { field: 'price', headerName: 'Price', width: 400 },
+       
         {field: 'action', headerName: '', width: 200, renderCell: (params) => {
           return (
             <>
