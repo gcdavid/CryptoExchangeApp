@@ -14,12 +14,8 @@ const SingleCryptoList = (item) => {
   };
   return (
     <>
-    {coins.map((coin) => {
-      if(coin.cryptoCoin.input === 0) {
-        <span>No remaining coins</span>
-      }
-      else {
-        <div style={{ position: "relative" }} className="listItem">
+    
+      <div style={{ position: "relative" }} className="listItem">
         <div className="listWrapper">
           <div className="listCoin">
             <div className="imgContainer">
@@ -39,9 +35,6 @@ const SingleCryptoList = (item) => {
           </button>
         </div>
       </div>
-      }
-    })}
-      
       {open && (
         <ExchangeCrypto title={title} item={item} close={setOpen} open={open} />
       )}
