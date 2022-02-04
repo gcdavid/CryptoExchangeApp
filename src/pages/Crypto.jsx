@@ -33,12 +33,12 @@ const Crypto = () => {
         );
       },
     },
-    { field: "price", headerName: "Price", width: 400 },
+    { field: "price", headerName: "Price", width: 300 },
 
     {
       field: "action",
       headerName: "",
-      width: 200,
+      width: 400,
       renderCell: (params) => {
         return (
           <>

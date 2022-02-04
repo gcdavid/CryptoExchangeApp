@@ -11,6 +11,6 @@ const CryptoList = () => {
       ))}
     </div>
   );
-};
+}; 
 
 export default CryptoList;

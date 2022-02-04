@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { buy } from "../redux/cryptoSlice";
 
 const BuyCrypto = ({ cryptoCoin, open, close }) => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(0);
   const dispatch = useDispatch();
 
   if (!open) {
@@ -18,7 +18,6 @@ const BuyCrypto = ({ cryptoCoin, open, close }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     dispatch(buy(args));
     close(false);
   };
@@ -40,7 +39,7 @@ const BuyCrypto = ({ cryptoCoin, open, close }) => {
       <div className="buyContainer">
         <div className="buyTitle">Buy {cryptoCoin.title}</div>
         <form>
-          <input type="text" onChange={(e) => setInput(e.target.value)} />
+          <input type="text" aria-required onChange={(e) => setInput(e.target.value)} />
           <button className="buyButton" onClick={handleSubmit}>
             Buy
           </button>
